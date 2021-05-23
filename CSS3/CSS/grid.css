@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    border: 2px solid red;
+    padding: 10px;
+    margin: 2px;
+    
+
+}
+
+.left{
+    border: 2px solid rgb(0, 255, 0);
+    text-align: justify;
+    float: left;
+    width:28%;
+    text-indent: 75px;
+    padding: 10px;
+    margin-right: 2px;
+
+}
+
+.main{
+    border: 2px solid rgb(17, 0, 255);
+    text-align: justify;
+    float: right;
+    width:70%;
+    text-indent: 75px;
+    padding: 10px;
+
+}
+
+/* different types of device use */
+@media only screen and (min-width: 600px){
+    body {
+        background: url("/images/background.jpg");
+        background-size:1920px 950px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color:cyan;
+    }
+}
+

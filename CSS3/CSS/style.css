@@ -1,0 +1,162 @@
+body{
+    background: url("/images/background.jpg");
+    background-size:1920px 950px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:cyan;
+}
+
+.header a{
+    border: 2px solid rgb(0, 255, 213);
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    color:seashell;
+    text-decoration: none;
+    margin: 50px 25px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color:rgba(32, 80, 238, 0.384);
+}
+.header a:hover{
+    border: 2px solid rgb(255, 0, 200);
+    color:red;
+    background-color: rgba(244, 248, 7, 0.397);
+}
+
+
+.navbar{
+    max-width: 75%;
+    border:15px solid grey;
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto;
+    text-decoration: none;
+}
+.navbar p{
+    text-indent: 75px;
+    text-align: justify;
+    color:hotpink;
+    /* font-family: 'Freckle Face', cursive;s */
+    font-family: 'Indie Flower', cursive;
+
+    
+}
+
+#innerlink{
+    display: block;
+    width: 75px;
+    margin: auto;
+    padding: 25px;
+    color:chartreuse;
+    border-radius: 30px;
+    background-color:crimson;
+    text-decoration: none;
+
+}
+#innerlink:link{
+    color:rgb(200, 255, 0);
+    background-color:rgb(40, 20, 220);
+}
+#innerlink:visited{
+    color:rgb(255, 0, 0);
+    background-color:rgb(20, 220, 30);
+}
+
+#innerlink:hover{
+    color:rgb(47, 0, 255);
+    background-color:rgb(203, 20, 220);
+}
+#innerlink:active{
+    color:rgb(255, 0, 212);
+    background-color:rgb(12, 1, 14);
+}
+
+.listclass{
+    color: white;
+    display: block;
+    width: 20%;
+    margin: auto;
+    background-color: rgb(26, 1, 245);
+    padding: 20px;
+    margin-top: 25px;
+
+}
+.listclass ol li{
+    font-size: 30px;
+    padding: 10px;
+    background-color:rgba(7, 255, 7, 0.411);
+    
+}
+
+.table_making{
+    padding: 200px;
+    background-color:rgba(255, 255, 255, 0.24);
+    margin-top: 25px;
+    color: darkred;
+}
+.tableContainer{
+    width: 22%;
+    margin: auto;
+    background-color:rgba(7, 205, 255, 0.534);
+    padding: 100px;
+}
+.tableContainer table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.tableContainer table th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    background-color: rgba(0, 128, 0, 0.349);
+}
+.tableContainer table td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    background-color: rgba(87, 184, 87, 0.438);
+}
+
+.mydisplay{
+    padding: 25px;
+    border:2px solid red;
+    display:inline;
+}
+
+.float{
+    border: 2px solid rgba(0, 128, 0, 0.411);
+    overflow:auto;
+    margin-top: 28px;
+
+}
+
+.float p{
+    text-align: center;
+}
+
+#myimage{
+    float: left;
+    
+}
+
+.table_making div table tr th{
+    background-color:rgba(137, 43, 226, 0.363);
+    color: black;
+}
+
+
+
+
+
+/* use # for id tag
+#second{
+    color:blueviolet;
+}
+ /* use .(dot) for class tag */
+/* .yellow{
+    color:coral;
+}
+#co1{
+    color:rgb(154, 247, 6);
+} */ 
