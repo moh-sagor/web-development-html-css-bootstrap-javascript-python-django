@@ -120,4 +120,88 @@
 // document.write(text);
 
 
+// Get Result
+// var marks = prompt("Enter Marks : ");
+
+// if (marks >= 80 && marks <=100){
+//     console.log("You Get A+");
+//     document.write("You Get A+");
+// }
+// else if (marks <= 79 && marks >=70){
+//     console.log("You Get A");
+//     document.write("You Get A");
+// }
+// else if (marks <= 69 && marks >=60){
+//     console.log("You Get B");
+//     document.write("You Get B");
+// }
+// else if (marks <= 59 && marks >=50){
+//     console.log("You Get c");
+//     document.write("You Get c");
+// }
+// else if (marks <= 49 && marks >=33){
+//     console.log("You Get d");
+//     document.write("You Get d");
+// }
+// else if (marks <= 33 && marks >=0){
+//     console.log("You Get f");
+//     document.write("You Get f");
+// }
+// else{
+//     console.log("Invalid Input");
+//     document.write("Invalid Input");
+// }
+
+
+// String 
+// let name = "Sagor Hossain"
+// let food = ["cake","biscuit","Icecream"]
+// let len = food.length;
+//  for (var i = 0; i<len; i++){
+//      console.log(food[i]);
+//  }
+
+// **********************************************
+// for in 
+// for of 
+
+// let name = "Sagor Hossain"
+// let food = ["cake","biscuit","Icecream"]
+
+// object doesnt have index 
+// let person = {
+//     name : "Sagor Hossain",
+//     age  : 25,
+//     blood : "B+ve",
+// }
+
+// use in for index 
+// for (var x in food ){
+//     console.log(x);
+
+// }
+
+// use of for get value 
+//  for (var x of food){
+//      console.log(x);
+//  }
+
+
+
+// *************************** 
+// var n = parseInt(prompt("Enter the number : "));
+// var sum = 0;
+// var series = "";
+
+// for (var i = 1 ; i<=n;i++){
+//     sum += i*i;
+//     series += (i*i).toString();
+//     if (i==n){
+//         continue;
+//     }
+//     series +=" + ";
+
+// }
+// console.log(`${series} = ${sum}`);
+
 
