@@ -205,3 +205,100 @@
 // console.log(`${series} = ${sum}`);
 
 
+
+// ********************************************************** 
+// var food = ["cake","Ice-cream","chocolate"]; 
+// var numbers = [1,3,5,7];
+
+// food.forEach(function(item,i){ // item => index => array 
+//     console.log(`Index : ${i} and Item : ${item}`);
+// });
+
+
+// array iteration using maping 
+
+// var food = ["cake","Ice-cream","chocolate"]; 
+// var numbers = [1,3,5,7];
+
+// function addSomething(item){
+//     return `${item} is a food`
+// }
+// let store=food.map(addSomething);
+// console.log(store);
+
+// *******************************************************
+// Object methods 
+
+// let person = {
+//     firstname : "sagor",
+//     lastname : "hossain",
+//     age : 25,
+//     dob : 1998,
+
+// fullname: function(){
+//     return `${this.firstname} ${this.lastname}`;
+//     }
+// }
+
+// console.log(person.fullname());
+// console.log(person.firstname);
+
+// let str = "Bangladesh";
+// console.log(str.length);
+// console.log(str.split());
+
+
+// let val;
+// let today = new Date();
+// val = today.getMonth();
+// console.log(val);
+
+// class person {
+//     constructor(fname,lname,birth){
+//         this.firstname = fname;
+//         this.lastname = lname;
+//         this.dob = birth;
+//     }
+
+//     calculateAge(){
+//         let birth = new Date(this.dob);
+//         let diff = Date.now() - this.dob.getTime();
+//         let ageDate = new Date(diff);
+//         return Math.abs(ageDate.getUTCFullYear()-1970);
+//     }
+// }
+
+// let person1 = new person("Sagor", "Hossain", "01-10-1999");
+// let person2 = new person("sohag", "Hossain", "12-10-1999");
+// let person3 = new person("Sanzida", "Mohuya", "20-10-1999");
+// // console.log(person1);
+// // console.log(person2);
+// // console.log(person3);
+
+// console.log(person1.calculateAge());
+// console.log(person2.calculateAge());
+// console.log(person3.calculateAge());
+
+
+
+// class person {
+//     constructor(fname,lname){
+//         this.firstname = fname;
+//         this.lastname = lname;
+//     }
+//     greeting(){
+//         return `Hello ${this.firstname} ${this.lastname}`;
+
+//     }
+
+
+// static test(){
+//     console.log("I am static.");
+//     }
+// }
+
+// let person1 = new person ("Sagor", "Hossain");
+
+// console.log(person.greeting);
+// console.log(person.test());
+
