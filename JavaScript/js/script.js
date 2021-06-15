@@ -280,7 +280,7 @@
 // console.log(person3.calculateAge());
 
 
-
+// **********Static Function*****************
 // class person {
 //     constructor(fname,lname){
 //         this.firstname = fname;
@@ -299,6 +299,71 @@
 
 // let person1 = new person ("Sagor", "Hossain");
 
-// console.log(person.greeting);
-// console.log(person.test());
+// console.log(person1.greeting());
 
+
+// let val;
+// val = this;
+// val = window;
+// val = window.document;
+// val = document.all;
+
+// console.log(val);
+
+
+//adding element to dom
+
+// let olItem = document.createElement('li');
+
+// //add id and class
+
+// olItem.className = "a";
+// olItem.id = "New-element";
+
+// //add attributes
+// olItem.setAttribute('title','A title for new element');
+// olItem.appendChild(document.createTextNode('Javascript'));
+// document.querySelector('ol').appendChild(olItem);
+
+
+// let ulItem = document.createElement('li');
+// let link = document.createElement('a');
+// link.appendChild(document.createTextNode('Instagram'));
+// link.setAttribute('href','https://www.instagram.com');
+// ulItem.appendChild(link);
+// document.querySelector('ul').appendChild(ulItem);
+
+
+// console.log(ulItem);
+// console.log(link);
+
+
+// replesing Element**************************************
+
+// let newHeading = document.createElement('h1');
+// newHeading.appendChild(document.createTextNode('H1 new element'));
+
+// newHeading.className = "sample-class";
+
+// let oldHeading = document.querySelector('h3');
+
+// let parent = document.querySelector('.container');
+// // parent = oldHeading.parentElement;
+// parent.replaceChild(newHeading,oldHeading);
+
+// console.log(newHeading);
+// console.log(oldHeading);
+
+
+// remove elements *****************************************
+
+let listItem = document.querySelectorAll('li');
+let list = document.querySelector('ul');
+
+listItem[0].remove();
+// listItem[1].remove();
+
+
+
+console.log(listItem);
+console.log(list);
