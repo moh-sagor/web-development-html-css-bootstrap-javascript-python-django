@@ -357,13 +357,145 @@
 
 // remove elements *****************************************
 
-let listItem = document.querySelectorAll('li');
-let list = document.querySelector('ul');
+// let listItem = document.querySelectorAll('li');
+// let list = document.querySelector('ul');
 
-listItem[0].remove();
-// listItem[1].remove();
+// listItem[0].remove();
+// // listItem[1].remove();
 
 
 
-console.log(listItem);
-console.log(list);
+// console.log(listItem);
+// console.log(list);
+
+
+// Events of javascript*************************************
+// function message (){
+//     document.write("Message works")
+// }
+
+// event listner by javaScript******************************
+// let btn = document.getElementById('sample-button').addEventListener('click', message);
+// let btn = document.querySelector('.container').addEventListener('mousemove', message);
+// document.querySelector('.container').style.padding='10px';
+// document.querySelector('.container').style.background='red';
+// function message (e){
+//     let val =e;
+//     val = e.target;
+//     val = e.timeStamp;
+//     val = e.type;
+//     val = e.clientY;
+//     val = e.clientX;
+//     val = e.offsetY;
+//     val = e.offsetX;
+//     val = this;
+//     this.style.background = `#${e.offsetX}`;   //Color changing using javaScript*******************************************
+//     // document.write("Message works");
+//     console.log(val);
+//     console.log(e.offsetY);
+//     console.log(e.offsetX);
+// }
+
+
+// document.querySelector('#name').addEventListener('focus', test);
+// document.querySelector('#name').addEventListener('keyup', test2);
+
+// function test(e){
+
+//     this.style.background = 'yellow'
+//     console.log("Focused !")
+// }
+
+// function test2(e){
+//     console.log(this.value);
+//     document.getElementById('para').innerText =this.value;
+// }
+
+// error Handling ************************************************
+
+// console.log("Before Error !");
+//  try{
+//     test ();
+//  }
+// catch(err){
+//     // console.log(err);
+//     console.log(err.message);
+//     console.log(err.name);
+// }
+// finally{
+//     console.log("I am sagor")
+// }
+
+// console.log("After Error !")
+
+
+// let a = 12;
+// try{
+//     if(a>15) throw "Too Big";
+//     else if (a<24) throw "Too small";
+// } catch(err){
+//     console.log(err);
+// }
+
+// regular expression *******************************************
+
+// let re;
+// re = /hello/i;
+// console.log(re);
+// console.log(re.source);
+
+// str = "Hello World! ";
+
+// //exec() - returns result in an array or null
+// let result = re.exec(str);
+// console.log(result);
+
+
+// let re;
+// let str;
+
+// re = /hello/i ;
+
+// // meta character ****
+// // ^ means must start with 
+// re = /^hello/i ;
+
+// //$ means must end with
+// re = /world$/i ;
+// re = /^hello$/i ; // Must start and end with 
+// re = /^he.lo/i ; // .(dot) means match any character
+// re = /h*llo/i ; // *(star) means zero or more times 
+// re = /he?llo/i; // ? means optional
+// re = /hello\?/i; // escaping
+
+// str = "Hello? World"
+// console.log(re.exec(str));
+// reTest(re,str);
+
+// function reTest(re,str){
+//     if(re.test(str)){
+//         console.log(`'${str}' matches '${re.source}'`);
+//     }
+//     else{
+//         console.log(`'${str}' Doesn't matches '${re.source}'`);
+//     }
+// }
+
+
+
+// character set using brackets [] *******************************
+re = /h[ea]llo/i; //Must be one of them inside brackets 
+
+str = "hello";
+
+console.log(re.exec(str));
+reTest(re,str);
+function reTest(re,str){
+        if(re.test(str)){
+            console.log(`'${str}' matches '${re.source}'`);
+        }
+        else{
+            console.log(`'${str}' Doesn't matches '${re.source}'`);
+        }
+    }
+
