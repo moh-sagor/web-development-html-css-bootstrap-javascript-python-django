@@ -55,7 +55,7 @@
 
 
 // ES6 feature
-// Template literals 
+// Template literals
 // console.log(`First line
 // Second Line`)
 
@@ -95,11 +95,11 @@
 // }
 
 
-// Switch 
+// Switch
 
 // console.log(`Select a option :
-//  a. op-1 
-//  b. op-2 
+//  a. op-1
+//  b. op-2
 //  c. op-3`);
 // choice = prompt();
 // var text;
@@ -153,7 +153,7 @@
 // }
 
 
-// String 
+// String
 // let name = "Sagor Hossain"
 // let food = ["cake","biscuit","Icecream"]
 // let len = food.length;
@@ -162,33 +162,33 @@
 //  }
 
 // **********************************************
-// for in 
-// for of 
+// for in
+// for of
 
 // let name = "Sagor Hossain"
 // let food = ["cake","biscuit","Icecream"]
 
-// object doesnt have index 
+// object doesnt have index
 // let person = {
 //     name : "Sagor Hossain",
 //     age  : 25,
 //     blood : "B+ve",
 // }
 
-// use in for index 
+// use in for index
 // for (var x in food ){
 //     console.log(x);
 
 // }
 
-// use of for get value 
+// use of for get value
 //  for (var x of food){
 //      console.log(x);
 //  }
 
 
 
-// *************************** 
+// ***************************
 // var n = parseInt(prompt("Enter the number : "));
 // var sum = 0;
 // var series = "";
@@ -206,18 +206,18 @@
 
 
 
-// ********************************************************** 
-// var food = ["cake","Ice-cream","chocolate"]; 
+// **********************************************************
+// var food = ["cake","Ice-cream","chocolate"];
 // var numbers = [1,3,5,7];
 
-// food.forEach(function(item,i){ // item => index => array 
+// food.forEach(function(item,i){ // item => index => array
 //     console.log(`Index : ${i} and Item : ${item}`);
 // });
 
 
-// array iteration using maping 
+// array iteration using maping
 
-// var food = ["cake","Ice-cream","chocolate"]; 
+// var food = ["cake","Ice-cream","chocolate"];
 // var numbers = [1,3,5,7];
 
 // function addSomething(item){
@@ -227,7 +227,7 @@
 // console.log(store);
 
 // *******************************************************
-// Object methods 
+// Object methods
 
 // let person = {
 //     firstname : "sagor",
@@ -457,14 +457,14 @@
 // re = /hello/i ;
 
 // // meta character ****
-// // ^ means must start with 
+// // ^ means must start with
 // re = /^hello/i ;
 
 // //$ means must end with
 // re = /world$/i ;
-// re = /^hello$/i ; // Must start and end with 
+// re = /^hello$/i ; // Must start and end with
 // re = /^he.lo/i ; // .(dot) means match any character
-// re = /h*llo/i ; // *(star) means zero or more times 
+// re = /h*llo/i ; // *(star) means zero or more times
 // re = /he?llo/i; // ? means optional
 // re = /hello\?/i; // escaping
 
@@ -484,18 +484,247 @@
 
 
 // character set using brackets [] *******************************
-re = /h[ea]llo/i; //Must be one of them inside brackets 
+// re = /h[ea]llo/i; //Must be one of them inside brackets
 
-str = "hello";
+// //Shorthand Character **************
 
-console.log(re.exec(str));
-reTest(re,str);
-function reTest(re,str){
-        if(re.test(str)){
-            console.log(`'${str}' matches '${re.source}'`);
-        }
-        else{
-            console.log(`'${str}' Doesn't matches '${re.source}'`);
-        }
+// re = /\w/;  // word character - alpha numeric or _
+// re = /\w+/; //One or more
+// re = /\W/; // Non word character
+// re = /\W+/; // One or more
+// re = /\d/; // Digits
+// re = /\d+/; //One or more
+// re = /\D/; // Non Digits
+// re = /\s/; // match white space
+// re = /\S/; // Match non white space
+// re = /Hello\b/; // word boundary
+
+// // Assertions
+// re = /x(?=yz)/ ; //mathches x only if x is before y
+// re = /x(?!yz)/ ;
+
+
+
+// str = "hello";
+// str = "+880145584554!@";
+// str = "dugfdui i 1"
+// str = "Hello World"
+// str = "fdsugduxyz "
+
+
+// console.log(re.exec(str));
+// reTest(re,str);
+// function reTest(re,str){
+//         if(re.test(str)){
+//             console.log(`'${str}' matches '${re.source}'`);
+//         }
+//         else{
+//             console.log(`'${str}' Doesn't matches '${re.source}'`);
+//         }
+//     }
+
+// Examples **********************************************
+
+// let re;
+// let str ;
+
+// // postal code
+// re = /^[0-9]{4}/ ; //  4 means the number of digits
+
+// str = "6000";
+
+// // Phone Number
+
+// re = /^01[0-9]{9}$/;
+// re = /^(\+)?(88)?01[0-9]{9}$/;
+
+// str = "8801745556745";
+
+// // Email Address
+
+// re = /^([a-zA-Z0-9]\.?)+[^\.]@([a-zA-Z0-9]\.?)+[^\.]$/;
+
+// str = "moh.sagor@gmail.com";
+
+// console.log(re.test(str));
+
+
+
+// AJAX ************ Asynchronous Programming *********************
+// Get data without loading the page
+
+// document.getElementById('get_data').addEventListener('click', loadData);
+
+// function loadData() {
+//     //Create XHR Object (XML http request)
+//     let xhr = new XMLHttpRequest();
+//     // console.log(xhr);
+
+//     //Open Function
+//     xhr.open('GET', 'data.txt', true);
+
+//     xhr.onprogress = function(){
+//         console.log(xhr.readyState);
+//     }
+
+//     xhr.onload = function () {
+//         if (this.status == 200) {
+//             document.getElementById('output').innerHTML = `<h4> ${this.responseText}</h4>`;
+//             // console.log(this.responseText);
+
+//         }
+//     }
+//     xhr.send();
+//     console.log(xhr);
+// }
+
+
+// gat data from different websites *************************
+// https://www.icndb.com/api/
+
+// document.getElementById('get_data').addEventListener('click', loadJokes);
+
+// function loadJokes(e) {
+//     let number = document.getElementById('numberJokes').value;
+//     // console.log(number);
+//     let xhr = new XMLHttpRequest();
+
+//     xhr.open('GET', `http://api.icndb.com/jokes/random/${number}`, true);
+
+//     xhr.onprogress = function(){
+//         document.getElementById('output').innerHTML = "<h3>Loading...........</h3>";
+//     }
+
+//     xhr.onload = function () {
+//         if (this.status == 200) {
+//             let data = JSON.parse(this.response);
+//             // console.log(data);
+//             let jokes = data.value;
+//             let output = "<ol>";
+//             jokes.forEach(function(item){
+//                 // console.log(item.joke);
+//                 output += `<li>${item.joke}</li>`;
+//             });
+
+
+//             output += "</ol>";
+
+//             document.getElementById('output').innerHTML = output;
+//             // console.log(jokes);
+//             console.log(data);
+//         }
+//     }
+//     xhr.send();
+// }
+
+
+// CallBack Function*************************************************
+// setTimeout(function(){
+//     console.log("Hello World");
+// },2000);
+// Synchronus Function **********************************************
+// let person = [
+//     {firstName : "Sagor", lastName : "Hossain"},
+//     {firstName : "Shohag", lastName : "Hossain"}
+// ]
+
+// function createPerson(person){
+//     setTimeout(function(){
+//         person.push(person);
+// },5000);
+// }
+
+// function getPerson(){
+//     setTimeout(function(){
+//         let output = '';
+//         person.forEach(function(person){
+//             output +=`<li>${person.firstName} ${person.lastName} </li>`
+//         });
+//         document.getElementById('output').innerHTML = output;
+//     },1000);
+// }
+
+
+// Asynchronus Function ********************************************
+// Promises
+
+// let persons = [
+//     {firstName : "Sagor", lastName : "Hossain"},
+//     {firstName : "Shohag", lastName : "Hossain"}
+// ]
+
+// function createPerson(person){
+//     let prom = new Promise(function(resolve, reject){
+//         persons.push(person);
+//         let error = false; // True means error
+//         if(!error){
+//             resolve();
+//         }
+//         else{
+//             reject('Error! : Something wrong');
+//         }
+//         resolve();
+//     });
+//     return prom;
+// }
+
+// function getPerson(){
+//     setTimeout(function(){
+//         let output = '';
+//         persons.forEach(function(person){
+//             output +=`<li>${person.firstName} ${person.lastName} </li>`
+//         });
+//         document.getElementById('output').innerHTML = output;
+//     },500);
+// }
+
+// createPerson({firstName : "Ruzzahan", lastName : "Islam"}).then(getPerson);
+// createPerson({firstName : "Wha am ", lastName : "i"}).then(getPerson).catch(function(err){
+//     console.log(err);
+// });
+
+// Fetch API ********************************************************
+//fetch uses JavaScript Promise
+
+// document.getElementById("get_data").addEventListener('click',getData);
+
+// // Arrow Function *****************
+
+// function getData(){
+//     fetch('http://api.icndb.com/jokes/random').then(res => res.json() )
+//     .then(data => {console.log(data);})
+//     .catch(err => {console.log(err);});
+// }
+
+
+// JavaScript Project ***********************************************
+
+
+// Define Element
+
+let form = document.querySelector('#task_form');
+let taskList = document.querySelector('ul');
+let clearBtn = document.querySelector('#clear_task_btn');
+let filter = document.querySelector('#task_filter');
+let taskInput = document.querySelector('#new_task');
+
+// Define Event listner
+
+form.addEventListener('submit', addTask);
+
+
+
+//Define Function
+
+//Add Task
+function addTask(e){
+    if(taskInput.value === ''){
+        alert("Add a Task");
     }
-
+    else{
+        // create li element
+        let li = document.createElement('li');
+        li.appendChild(document.createTextNode(taskInput.value + " "));
+        taskList.appendChild(li);
+    }
+}

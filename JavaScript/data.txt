@@ -1,0 +1,2 @@
+I am simple Data  
+this is AJAX example
