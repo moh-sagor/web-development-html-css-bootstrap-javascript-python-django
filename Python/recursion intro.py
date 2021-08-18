@@ -13,3 +13,5 @@ def factorial2(n):
 num = int(input("Enter a value : "))
 print(factorial(num))
 print(factorial2(num))
+
+  
